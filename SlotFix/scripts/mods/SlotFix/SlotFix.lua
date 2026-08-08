@@ -26,7 +26,7 @@ local function fix_slots(player_manager)
     for unique_id, player in pairs(players) do
         local slot = player:slot()
         if slot then
-            if slot <= 4 then
+            if slot <= 4 and not occupied_slots[slot] then
                 occupied_slots[slot] = true
             else
                 table.insert(players_to_reassign, player)
