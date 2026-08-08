@@ -31,12 +31,17 @@ mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_pl
                 occupied_slots[i] = true
                 fixed_any = true
 
+                
                 if mod:get("debug_messages") then
                     mod:echo("FOUND BROKEN SLOT: Changed player from slot %s to slot %s", tostring(old_slot), tostring(i))
                 end
 
                 if UISettings then
                     UISettings._colors_revision = (UISettings._colors_revision or 0) + 1
+                end
+
+                local color_mod = get_mod("ColorSelection")
+                    color_mod.apply_slot_colors()
                 end
                 break
             end
