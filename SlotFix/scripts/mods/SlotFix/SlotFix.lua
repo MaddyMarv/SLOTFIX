@@ -1,13 +1,25 @@
 local mod = get_mod("SlotFix")
 local UISettings = require("scripts/settings/ui/ui_settings")
 
-mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_player_id)
-    local game_mode_name = Managers.state.game_mode and Managers.state.game_mode:game_mode_name()
-    if not game_mode_name or string.find(game_mode_name, "hub") then
+local function fix_slots(player_manager)
+    local is_hub = false
+    if Managers.state and Managers.state.game_mode then
+        local game_mode_name = Managers.state.game_mode:game_mode_name()
+        if game_mode_name and string.find(game_mode_name, "hub") then
+            is_hub = true
+        end
+    elseif Managers.mechanism then
+        local mechanism_name = Managers.mechanism:mechanism_name()
+        if mechanism_name and mechanism_name == "hub" then
+            is_hub = true
+        end
+    end
+
+    if is_hub then
         return
     end
 
-    local players = self:players()
+    local players = player_manager:players()
     local occupied_slots = {}
     local players_to_reassign = {}
 
@@ -51,4 +63,12 @@ mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_pl
     if not fixed_any and mod:get("debug_messages") then
         mod:echo("No broken slots found.")
     end
+end
+
+mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_player_id)
+    fix_slots(self)
+end)
+
+mod:hook_safe("PlayerManager", "add_player", function(self, peer_id, local_player_id, ...)
+    fix_slots(self)
 end)
