@@ -30,7 +30,6 @@ mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_pl
                 player:set_slot(i)
                 occupied_slots[i] = true
                 fixed_any = true
-
                 
                 if mod:get("debug_messages") then
                     mod:echo("FOUND BROKEN SLOT: Changed player from slot %s to slot %s", tostring(old_slot), tostring(i))
@@ -41,6 +40,7 @@ mod:hook_safe("PlayerManager", "remove_player", function(self, peer_id, local_pl
                 end
 
                 local color_mod = get_mod("ColorSelection")
+                if color_mod and type(color_mod.apply_slot_colors) == "function" then
                     color_mod.apply_slot_colors()
                 end
                 break
