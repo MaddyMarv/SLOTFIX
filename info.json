@@ -1,0 +1,14 @@
+{
+    "name": "SLOTFIX",
+    "author": "IndicaBunny",
+    "version": "2",
+    "source": "https://github.com/MaddyMarv/SLOTFIX",
+    "kofi": "https://ko-fi.com/indicabunny",
+    "description": "Fixes a bug in the game that results in players appearing black or having no slot.",
+    "order": {
+        "require": [],
+        "this_before": [],
+        "this_after": []
+    },
+    "localization": {}
+}
