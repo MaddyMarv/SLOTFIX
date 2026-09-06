@@ -1,4 +1,4 @@
-Fixes missing player slots and black portraits by reassigning players to valid slots.
+Fixes invalid player slots that make class icons appear black by reassigning players to valid slots.
 
 Required by Color Selection.
 

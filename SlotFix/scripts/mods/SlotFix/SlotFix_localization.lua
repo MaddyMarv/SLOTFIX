@@ -3,7 +3,7 @@ return {
         en = "SlotFix",
     },
     mod_description = {
-        en = "Fixes missing player slots and black portraits by reassigning players to valid slots.",
+        en = "Fixes invalid player slots that make class icons appear black by reassigning players to valid slots.",
     },
     debug_messages_title = {
         en = "Enable Debug Messages",

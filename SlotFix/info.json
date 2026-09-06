@@ -7,7 +7,7 @@
     "funding": {
         "kofi": "https://ko-fi.com/indicabunny"
     },
-    "description": "Fixes missing player slots and black portraits by reassigning players to valid slots.",
+    "description": "Fixes invalid player slots that make class icons appear black by reassigning players to valid slots.",
     "dependencies": {
         "required": [],
         "self_after": [],
