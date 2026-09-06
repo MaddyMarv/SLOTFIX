@@ -7,7 +7,7 @@
     "funding": {
         "kofi": "https://ko-fi.com/indicabunny"
     },
-    "description": "Fixes a bug in the game that results in players appearing black or having no slot.",
+    "description": "Fixes missing player slots and black portraits by reassigning players to valid slots.",
     "dependencies": {
         "required": [],
         "self_after": [],

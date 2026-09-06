@@ -3,7 +3,7 @@ return {
         en = "SlotFix",
     },
     mod_description = {
-        en = "Fixes a base game bug where players are assigned invalid slots (>4) after someone leaves.",
+        en = "Fixes missing player slots and black portraits by reassigning players to valid slots.",
     },
     debug_messages_title = {
         en = "Enable Debug Messages",
