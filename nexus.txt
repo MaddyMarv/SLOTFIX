@@ -3,6 +3,8 @@ Fixes invalid player slots that make class icons appear black by reassigning pla
 Required by Color Selection.
 
 [b]Options:[/b]
+
+[b]General[/b]
 - Enable Debug Messages
 
 [b]Links:[/b]
