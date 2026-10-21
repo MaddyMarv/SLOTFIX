@@ -5,9 +5,11 @@ Fixes invalid player slots that make class icons appear black by reassigning pla
 
 Required by Color Selection.
 
-**Options:**
+<details>
+<summary><b>Mod Settings / Commands</b></summary>
 
 **General**
 - Enable Debug Messages
+</details>
 
 🔗 **Links:** [Source Code](https://github.com/MaddyMarv/SLOTFIX) | [Nexus Mods Profile](https://www.nexusmods.com/profile/indicabunny) | [Support Me on Ko-fi](https://ko-fi.com/indicabunny)
