@@ -1,5 +1,3 @@
-local mod = get_mod("SlotFix")
-
 return {
 	name = "SlotFix",
 	description = "Fixes a base game bug where players are assigned invalid slots (>4) after someone leaves.",
