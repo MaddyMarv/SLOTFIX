@@ -12,4 +12,4 @@ Required by Color Selection.
 - Enable Debug Messages
 </details>
 
-🔗 **Links:** [Source Code](https://github.com/MaddyMarv/SLOTFIX) | [Nexus Mods Profile](https://www.nexusmods.com/profile/indicabunny) | [Support Me on Ko-fi](https://ko-fi.com/indicabunny)
+🔗 **Links:** [Source Code](https://github.com/MaddyMarv/SlotFix) | [Nexus Mods Profile](https://www.nexusmods.com/profile/indicabunny) | [Support Me on Ko-fi](https://ko-fi.com/indicabunny)
