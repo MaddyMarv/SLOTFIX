@@ -1,6 +1,8 @@
+local mod = get_mod("SlotFix")
+
 return {
-	name = "SlotFix",
-	description = "Fixes a base game bug where players are assigned invalid slots (>4) after someone leaves.",
+	name = mod:localize("mod_name"),
+	description = mod:localize("mod_description"),
 	is_togglable = true,
 	options = {
 		widgets = {
